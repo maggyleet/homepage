@@ -1,0 +1,140 @@
+@media (max-width:600px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+* {
+    font-family: "Playfair Display", "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #ffffff;
+    --lightBlue: #008fb3;
+    --shadow: #00000030;
+    --grey: #4d4d4d;
+}
+
+.about {
+    background-image: linear-gradient(166deg,
+            var(--lightBlue) 65%,
+            var(--shadow) 65.4%,
+            var(--white) 65%);
+}
+
+.prfl {
+    max-height: 550px;
+}
+
+.about-me {
+    background-color: white;
+    max-width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 50px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.abt-icons {
+    display: flex;
+    justify-self: end;
+    align-self: end;
+}
+
+.abt-icon {
+    height: 2rem;
+}
+
+.abt-me-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.work-icon {
+    height: 1.8rem;
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    width: 350px;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+.card-a-1 {
+    background-color: rgb(240, 165, 190);
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+
+.card-b {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work {
+    /* background-color: rgb(148, 240, 148); */
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    padding: 25px;
+}
+
+.contact {
+    background-color: rgb(241, 189, 189);
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact {
+    background-color: var(--lightBlue);
+    margin-top: 2rem;
+    height: 150%;
+    color: var(--white);
+}
+
+.one-line {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    height: 1.8rem;
+}
+
+/* .part {
+    max-height: 100vh;
+} */
