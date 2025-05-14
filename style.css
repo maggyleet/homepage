@@ -227,6 +227,11 @@
         flex-wrap: wrap;
     }
 
+    .prfl {
+        max-width: 350px;
+        height: auto;
+    }
+
     .phone-img {
         width: 100%;
         max-width: 300px;
