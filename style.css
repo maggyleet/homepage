@@ -24,11 +24,11 @@
     width: fit-content;
 }
 
-/* .image-wrapper img {
+.image-wrapper img {
     display: block;
     width: 100%;
     height: auto;
-} */
+}
 
 .overlay-text {
     position: absolute;
