@@ -180,7 +180,7 @@
 .contact {
     background-color: rgb(241, 189, 189);
     display: flex;
-    padding: 50px;
+    padding: 2.5rem;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -223,56 +223,20 @@
     padding: 1.2rem;
 }
 
-/* Responsive layout adjustments */
-@media (max-width: 768px) {
+@media (max-width:600px) {
     .about {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 2rem 1rem;
-        text-align: center;
+        flex-wrap: wrap;
     }
 
-    .image-wrapper {
-        margin-bottom: 1.5rem;
-        max-width: 80%;
-    }
-
-    .about-me {
-        padding: 1rem;
-        box-shadow: none;
-    }
-
-    .abt-me-title {
-        font-size: 1.5rem;
-    }
-
-    .abt-me-para {
-        font-size: 1rem;
-    }
-
-    .overlay-text {
-        font-size: 1rem;
-        padding: 0.5rem 0.8rem;
-    }
-
-    .works {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-        margin: 15px 0;
+    .phone-img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        display: block;
+        object-fit: cover;
     }
 
     .contact {
-        flex-direction: column;
-        padding: 2rem 1rem;
-    }
-
-    .contact-b img {
-        width: 100%;
-        max-width: 300px;
+        padding: 0.5rem;
     }
 }
