@@ -54,7 +54,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 50px; */
     padding: 4rem;
 }
 
@@ -223,7 +222,7 @@
     padding: 1.2rem;
 }
 
-@media (max-width:600px) {
+@media (max-width:768px) {
     .about {
         flex-wrap: wrap;
     }
