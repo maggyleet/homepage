@@ -226,6 +226,8 @@
 /* Responsive layout adjustments */
 @media (max-width: 768px) {
     .about {
+        display: flex;
+        justify-content: center;
         flex-direction: column;
         padding: 2rem 1rem;
         text-align: center;
