@@ -223,9 +223,54 @@
     padding: 1.2rem;
 }
 
-@media (max-width:600px) {
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
     .about {
-        display: flex;
         flex-direction: column;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .image-wrapper {
+        margin-bottom: 1.5rem;
+        max-width: 80%;
+    }
+
+    .about-me {
+        padding: 1rem;
+        box-shadow: none;
+    }
+
+    .abt-me-title {
+        font-size: 1.5rem;
+    }
+
+    .abt-me-para {
+        font-size: 1rem;
+    }
+
+    .overlay-text {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .works {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .contact-b img {
+        width: 100%;
+        max-width: 300px;
     }
 }
