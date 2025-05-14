@@ -1,10 +1,3 @@
-@media (max-width:600px) {
-    body {
-        background-color: black;
-        color: white;
-    }
-}
-
 * {
     font-family: "Playfair Display", "Roboto", sans-serif;
     margin: 0;
@@ -25,37 +18,66 @@
             var(--white) 65%);
 }
 
-.prfl {
-    max-height: 550px;
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+}
+
+/* .image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+} */
+
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+    transform: translateX(-30%);
+    color: white;
+    padding: 0.8rem;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    font-weight: 700;
 }
 
 .about-me {
     background-color: white;
     max-width: 600px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    padding: 50px;
+    padding: 1.6rem 1.6rem 0.7rem 1.6rem;
+    border-radius: 4px;
 }
 
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    /* padding: 50px; */
+    padding: 4rem;
 }
 
 .abt-icons {
+    padding: 20px;
     display: flex;
-    justify-self: end;
-    align-self: end;
+    justify-content: end;
+    gap: 0.8rem;
 }
 
 .abt-icon {
+    padding-top: 0.2rem;
     height: 2rem;
 }
 
 .abt-me-title {
     font-weight: 600;
     font-size: 1.8rem;
+    padding-bottom: 0.6rem;
+}
+
+.abt-me-para {
+    font-size: 1.1rem;
 }
 
 .work-icon {
@@ -69,25 +91,60 @@
     padding: 25px;
 }
 
+.work-title {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     height: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-    width: 350px;
+    max-width: 400px;
     border-radius: 10px;
     margin: 25px;
 }
 
-.card-a-1 {
-    background-color: rgb(240, 165, 190);
+.card-a-1,
+.card-a-2,
+.card-a-3,
+.card-a-4,
+.card-a-5,
+.card-a-6 {
     border-radius: 10px 10px 0 0;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: medium;
+    font-size: large;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.card-a-1 {
+    background-color: rgb(240, 165, 190);
+}
+
+.card-a-2 {
+    background-color: rgb(165, 186, 240);
+}
+
+.card-a-3 {
+    background-color: rgb(166, 240, 165);
+}
+
+.card-a-4 {
+    background-color: rgb(226, 165, 240);
+}
+
+.card-a-5 {
+    background-color: rgb(232, 240, 165);
+}
+
+.card-a-6 {
+    background-color: rgb(240, 180, 165);
 }
 
 .card-b {
@@ -100,6 +157,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0.2rem 0;
+}
+
+.prjt-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.work-icon {
+    padding-left: 0.3rem;
 }
 
 .work {
@@ -116,6 +183,7 @@
     padding: 50px;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .contact {
@@ -125,16 +193,39 @@
     color: var(--white);
 }
 
+.contact-me {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contact-a div {
+    padding: 0.4rem;
+}
+
+.contact-icons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
 .one-line {
     display: flex;
     align-items: center;
-    gap: 15px;
 }
 
 .icon {
     height: 1.8rem;
 }
 
-/* .part {
-    max-height: 100vh;
-} */
+.phone-img {
+    max-width: 400px;
+    padding: 1.2rem;
+}
+
+@media (max-width:600px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+}
