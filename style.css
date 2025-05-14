@@ -225,7 +225,7 @@
 @media (max-width:768px) {
     .about {
         flex-wrap: wrap;
-        padding: 0;
+        padding: 2rem;
     }
 
     .prfl {
